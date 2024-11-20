@@ -1,11 +1,13 @@
 server:
-  port: 8080
+  port: 8085
 
 spring:
+  profiles:
+    active: dev
   datasource:
-    url: jdbc:mysql://localhost:3306/schedulr
+    url: jdbc:mysql://localhost:3306/schedlr
     username: root
-    password: passw0rd
+    password: root
   jpa:
     properties:
       hibernate:
@@ -14,3 +16,11 @@ spring:
     show-sql: true
   main:
     web-application-type: servlet
+
+    # API Endpoints
+
+schedlr:
+    dev:
+      url: http://localhost:8081/schedlr/
+    prod:
+      url: http://prod.server.com/schedlr/
