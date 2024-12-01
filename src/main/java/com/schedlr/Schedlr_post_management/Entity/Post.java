@@ -55,4 +55,76 @@ public class Post {
                 ", schedule=" + schedule.toString() +
                 '}';
     }
+
+    public int getPostId() {
+        return postId;
+    }
+
+    public void setPostId(int postId) {
+        this.postId = postId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public boolean isPinterest() {
+        return pinterest;
+    }
+
+    public void setPinterest(boolean pinterest) {
+        this.pinterest = pinterest;
+    }
+
+    public boolean isFb() {
+        return fb;
+    }
+
+    public void setFb(boolean fb) {
+        this.fb = fb;
+    }
+
+    public boolean isLinkedin() {
+        return linkedin;
+    }
+
+    public void setLinkedin(boolean linkedin) {
+        this.linkedin = linkedin;
+    }
+
+    public boolean isTwitter() {
+        return twitter;
+    }
+
+    public void setTwitter(boolean twitter) {
+        this.twitter = twitter;
+    }
+
+    public LocalDateTime getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(LocalDateTime schedule) {
+        this.schedule = schedule;
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
 }
